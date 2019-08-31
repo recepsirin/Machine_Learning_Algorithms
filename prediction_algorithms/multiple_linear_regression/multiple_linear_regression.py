@@ -29,8 +29,6 @@ df_country = pd.DataFrame(data=country, index=range(22), columns=['fr', 'tr', 'u
 df_height_weight_age = pd.DataFrame(data=age, index=range(22), columns=['height', 'weight', 'age'])
 df_gender = pd.DataFrame(data=gender_ohe[:, :1], index=range(22), columns=['gender'])
 
-# axis= 0 -> satır bazında birleştirme, axis=1 -> sütun bazında birleştirme
-
 # concatenation with concat function
 df_all_except_gender = pd.concat([df_country, df_height_weight_age],
                                  axis=1)  # axis -> 0 is index based, 1 is column based
