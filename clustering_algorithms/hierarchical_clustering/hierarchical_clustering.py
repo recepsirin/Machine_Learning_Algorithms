@@ -8,7 +8,15 @@ X = data_set.iloc[:, 1:].values  # picking age, consumption rate and salary colu
 
 # Model Building
 
+# n_clusters: The number of clusters to find.
+
+# affinity: Metric used to compute the linkage. Our linkage is 'ward' so it only accepts 'euclidean'
+
+# linkage: The linkage criterion determines which distance to use between sets of observation.
+# The algorithm will merge the pairs of cluster that minimize this criterion.
+
 ac = AgglomerativeClustering(n_clusters=4, affinity='euclidean', linkage='ward')
-y_pred = ac.fit_predict(X)
-# print(y_pred)
+
+y_pred = ac.fit_predict(X)  # making prediction
+
 
