@@ -13,5 +13,5 @@
 | Clustering    |  
 | ------------- |
 | K-Means      |
-| Hierarchical Cluestering     |
+| Hierarchical Clustering     |
 
