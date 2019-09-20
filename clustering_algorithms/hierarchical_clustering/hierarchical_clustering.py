@@ -19,6 +19,11 @@ ac = AgglomerativeClustering(n_clusters=4, affinity='euclidean', linkage='ward')
 
 y_pred = ac.fit_predict(X)  # making prediction
 
+# Outputting with Hierarchical Clustering attributes
+
+print('cluster leaves: ', ac.n_leaves_)  # Number of leaves in the hierarchical tree.
+print('connected components: ', ac.n_connected_components_)  # The estimated number of connected components in the graph
+
 # Data Visualization
 
 plt.title('Hierarchical Clustering')
